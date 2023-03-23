@@ -34,7 +34,7 @@ else{
     var charset = "ABCDEF"; 
         z="";
     for( var i=0; i < anysize; i++ )
-        result += charset[Math.floor(Math.random() * charset.length)];
+        z += charset[Math.floor(Math.random() * charset.length)];
     document.getElementById("posto").innerHTML = y + z;
 
     document.getElementById("riepilogo").style.display = "block";

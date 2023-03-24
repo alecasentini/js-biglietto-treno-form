@@ -7,19 +7,19 @@ function calcoloPrezzo(){
 if ( eta < 18 ){
         prezzoTotale = prezzo * 0.80 
         document.getElementById("prezzo-biglietto").innerHTML = prezzoTotale.toFixed(2);
-        document.getElementById("tipo-biglietto").innerHTML = "Tariffa Young";
+        document.getElementById("tipo-biglietto").innerHTML = "Young";
     }
 
 else if( eta >= 65 ){
         prezzoTotale = prezzo * 0.60 
         document.getElementById("prezzo-biglietto").innerHTML = prezzoTotale.toFixed(2);
-        document.getElementById("tipo-biglietto").innerHTML = "Tariffa Senior";
+        document.getElementById("tipo-biglietto").innerHTML = "Senior";
     }
 
 else{
         prezzoTotale = prezzo
         document.getElementById("prezzo-biglietto").innerHTML = prezzoTotale.toFixed(2);
-        document.getElementById("tipo-biglietto").innerHTML = "Tariffa Standard";
+        document.getElementById("tipo-biglietto").innerHTML = "Standard";
 }
 
     document.getElementById("riepilogo-nome").innerHTML = nomeCognome;
@@ -28,8 +28,6 @@ else{
     document.getElementById("carrozza").innerHTML = x;
 
     let y = Math.floor((Math.random() * 36) + 1);
-    // var charset = "ABCDEF";
-    // let z = Math.random(charset)
     var anysize = 1;
     var charset = "ABCDEF"; 
         z="";
